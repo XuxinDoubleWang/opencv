@@ -123,7 +123,7 @@ int main()
   cout << "Waiting ..." << endl;
 
   // Loop until all the points are registered
-  while ( waitKey(30) < 0 )
+while (waitKey(30) != 27) 
   {
     // Refresh debug image
     img_vis = img_in.clone();
